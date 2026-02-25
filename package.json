@@ -1,0 +1,51 @@
+{
+	"name": "n8n-nodes-upscaleimg",
+	"version": "1.0.0",
+	"description": "n8n community node to upscale images using the UpscaleIMG API",
+	"license": "MIT",
+	"homepage": "https://upscaleimg.app",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"image",
+		"upscale",
+		"resize",
+		"ai"
+	],
+	"author": {
+		"name": "Artur"
+	},
+	"main": "dist/nodes/UpscaleImg/UpscaleImg.node.js",
+	"scripts": {
+		"build": "tsc && cp nodes/UpscaleImg/upscaleimg.png dist/nodes/UpscaleImg/",
+		"build:watch": "tsc --watch",
+		"lint": "eslint nodes credentials --ext .ts",
+		"lint:fix": "eslint nodes credentials --ext .ts --fix",
+		"prepublishOnly": "npm run build",
+		"test": "jest"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"credentials": [
+			"dist/credentials/UpscaleImgApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/UpscaleImg/UpscaleImg.node.js"
+		]
+	},
+	"devDependencies": {
+		"@types/jest": "^29.5.0",
+		"@types/node": "^22.0.0",
+		"form-data": "^4.0.5",
+		"jest": "^29.7.0",
+		"n8n-workflow": "*",
+		"ts-jest": "^29.2.0",
+		"typescript": "~5.7.0"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}

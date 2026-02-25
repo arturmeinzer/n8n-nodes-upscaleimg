@@ -1,0 +1,11 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Photo frame -->
+    <rect x="0" y="0" width="200" height="200" fill="#2d7eff" />
+    <!-- Arrow up -->
+    <polygon points="100,30 130,80 115,80 115,135 85,135 85,80 70,80" fill="#fff" />
+    <!-- Pixel effect: small squares -->
+    <rect x="55" y="115" width="20" height="20" fill="#fff" opacity="0.6"/>
+    <rect x="125" y="115" width="20" height="20" fill="#fff" opacity="0.6"/>
+    <rect x="75" y="145" width="20" height="20" fill="#fff" opacity="0.3"/>
+    <rect x="105" y="145" width="20" height="20" fill="#fff" opacity="0.3"/>
+</svg>
