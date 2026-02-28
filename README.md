@@ -12,7 +12,7 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 
 ## Credentials
 
-You need an UpscaleIMG API key. Get one at [upscaleimg.app/en/api-docs](https://upscaleimg.app/en/api-docs).
+You need an UpscaleIMG API key. Sign up at [upscaleimg.app](https://upscaleimg.app), then generate your API key in the [dashboard](https://upscaleimg.app/en/dashboard). See the [API documentation](https://upscaleimg.app/en/api-docs) for details.
 
 Add the API key in n8n under **Credentials > UpscaleIMG API**.
 
